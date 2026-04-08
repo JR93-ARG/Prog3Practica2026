@@ -1,30 +1,34 @@
-﻿namespace Program01;
+﻿namespace Program01_03;
 
 class Program
 {
     static void Main(string[] args)
     {
-       Console.WriteLine("--- SISTEMA DE REGISTRO DE USUARIO ---");
+       Console.WriteLine("--- SISTEMA DE CONTROL JUBILATORIO ---");
 
-            // 1. Entrada de Texto (Simple)
             Console.Write("Por favor, ingresa tu nombre: ");
             string nombre = Console.ReadLine();
 
-            // 2. Entrada de Números (Requiere Conversión)
-            Console.Write("Ingresa tu edad: ");
-            string edadTexto = Console.ReadLine();
-            int edad = int.Parse(edadTexto); // Convertimos el texto a número entero
+            Console.Write("Ingresa tu fecha de nacimiento (ejemplo: 1980): ");
+             int añoNacimiento = int.Parse(Console.ReadLine());
 
-            // 3. Entrada de Decimales (Precios o Medidas)
-            Console.Write("Ingresa tu estatura (ejemplo: 1,75): ");
-            double estatura = double.Parse(Console.ReadLine()); // Conversión directa en una línea
+            Console.Write("Ingresa tus años de inicio de actividades (ejemplo: 2000): ");
+            int añoInicActividad = int.Parse(Console.ReadLine());
 
-            // 4. Mostrar los resultados procesados
-            Console.WriteLine("\n--- PERFIL CREADO ---");
+                      
+
+            Console.WriteLine("\n--- INFORMACIÓN REGISTRADA ---");
             Console.WriteLine("Nombre: " + nombre);
-            Console.WriteLine("Edad el próximo año: " + (edad + 1)); // Operación matemática
-            Console.WriteLine("Estatura: " + estatura + " metros");
-
+            Console.WriteLine("Edad este año: " + (2026  - añoNacimiento)); 
+            Console.WriteLine("Años de inicio de actividades: " + añoInicActividad);
+            if (añoInicActividad <= 1996 && añoNacimiento <= 1960)
+             {
+                Console.WriteLine("¡Felicidades! Ya estás jubilado.");
+            }
+             else
+             {
+                Console.WriteLine("Aún no estás jubilado.");
+             }
             Console.WriteLine("\nPresiona ENTER para salir.");
             Console.ReadLine();
     }

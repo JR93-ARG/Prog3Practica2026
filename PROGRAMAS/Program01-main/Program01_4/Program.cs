@@ -1,29 +1,36 @@
-﻿namespace Program01;
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Program01;
 
 class Program
 {
     static void Main(string[] args)
     {
-       Console.WriteLine("--- SISTEMA DE REGISTRO DE USUARIO ---");
+       Console.WriteLine("--- COBRO DE ARTICULOS ---");
 
-            // 1. Entrada de Texto (Simple)
-            Console.Write("Por favor, ingresa tu nombre: ");
-            string nombre = Console.ReadLine();
+            Console.Write("Ingrese el total de la venta: ");
+            double totalVenta = double.Parse(Console.ReadLine());
 
-            // 2. Entrada de Números (Requiere Conversión)
-            Console.Write("Ingresa tu edad: ");
-            string edadTexto = Console.ReadLine();
-            int edad = int.Parse(edadTexto); // Convertimos el texto a número entero
+            
+            Console.Write("Ingresa metodo de pago: ");
+            string metodoPago = Console.ReadLine();
 
-            // 3. Entrada de Decimales (Precios o Medidas)
-            Console.Write("Ingresa tu estatura (ejemplo: 1,75): ");
-            double estatura = double.Parse(Console.ReadLine()); // Conversión directa en una línea
+            
+           Console.WriteLine("\n--- DEBERA COBRAR  ---");
+           
+        if (metodoPago != "efectivo" || metodoPago != "EFECTIVO")
+        {
+            
+            Console.WriteLine("El cliente debera abonar en " + metodoPago + "$" (totalVenta + (totalVenta * 0.3)));
+        }
+        else
+        {
+            Console.WriteLine  ("El cliente debera abonar en " + metodoPago + "$" + totalVenta);
+        }
 
-            // 4. Mostrar los resultados procesados
-            Console.WriteLine("\n--- PERFIL CREADO ---");
-            Console.WriteLine("Nombre: " + nombre);
-            Console.WriteLine("Edad el próximo año: " + (edad + 1)); // Operación matemática
-            Console.WriteLine("Estatura: " + estatura + " metros");
+         
+         
+            
 
             Console.WriteLine("\nPresiona ENTER para salir.");
             Console.ReadLine();
