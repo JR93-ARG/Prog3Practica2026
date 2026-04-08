@@ -1,31 +1,28 @@
-﻿namespace Program01;
+﻿namespace Program01_5;
 
-class Program
-{
-    static void Main(string[] args)
+    class Program
     {
-       Console.WriteLine("--- SISTEMA DE REGISTRO DE USUARIO ---");
+        static void Main(string[] args)
+        {
+            Console.WriteLine("--- CRONOMETRO ---");
 
-            // 1. Entrada de Texto (Simple)
-            Console.Write("Por favor, ingresa tu nombre: ");
-            string nombre = Console.ReadLine();
+            Console.WriteLine("Presiona ENTER para iniciar el cronometro.");
+            Console.ReadLine();
 
-            // 2. Entrada de Números (Requiere Conversión)
-            Console.Write("Ingresa tu edad: ");
-            string edadTexto = Console.ReadLine();
-            int edad = int.Parse(edadTexto); // Convertimos el texto a número entero
+            var startTime = DateTime.Now;
 
-            // 3. Entrada de Decimales (Precios o Medidas)
-            Console.Write("Ingresa tu estatura (ejemplo: 1,75): ");
-            double estatura = double.Parse(Console.ReadLine()); // Conversión directa en una línea
+            Console.WriteLine("Cronometro iniciado. Presiona ENTER para detenerlo.");
+            Console.ReadLine();
 
-            // 4. Mostrar los resultados procesados
-            Console.WriteLine("\n--- PERFIL CREADO ---");
-            Console.WriteLine("Nombre: " + nombre);
-            Console.WriteLine("Edad el próximo año: " + (edad + 1)); // Operación matemática
-            Console.WriteLine("Estatura: " + estatura + " metros");
+            var endTime = DateTime.Now;
+
+
+            var duration = endTime - startTime;
+
+            Console.WriteLine("Tiempo transcurrido: " + duration + " .");
 
             Console.WriteLine("\nPresiona ENTER para salir.");
-            Console.ReadLine();
-    }
-}
+            Console.ReadLine(); 
+        }
+
+   }

@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Program01;
+namespace Program01_04;
 
 class Program
 {
@@ -18,19 +18,15 @@ class Program
             
            Console.WriteLine("\n--- DEBERA COBRAR  ---");
            
-        if (metodoPago != "efectivo" || metodoPago != "EFECTIVO")
+        if (metodoPago != "efectivo" && metodoPago != "EFECTIVO")
         {
             
-            Console.WriteLine("El cliente debera abonar en " + metodoPago + "$" (totalVenta + (totalVenta * 0.3)));
+            Console.WriteLine("El cliente debera abonar en " + metodoPago + " $" + (totalVenta + (totalVenta * 0.3)));
         }
         else
         {
-            Console.WriteLine  ("El cliente debera abonar en " + metodoPago + "$" + totalVenta);
-        }
-
-         
-         
-            
+            Console.WriteLine  ("El cliente debera abonar en " + metodoPago + " $" + totalVenta);
+        }                  
 
             Console.WriteLine("\nPresiona ENTER para salir.");
             Console.ReadLine();
