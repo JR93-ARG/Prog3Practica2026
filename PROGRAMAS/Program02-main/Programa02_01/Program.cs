@@ -1,21 +1,18 @@
-﻿
-namespace Programa02;
+﻿namespace program02_01;
 
 class Program
 {
     static void Main(string[] args)
     {
-            Console.WriteLine("--- BLOQUE 1: NÚMEROS ENTEROS ---");
+        Console.WriteLine("PRACTICAMOS NUMEROS ENTEROS");
+    
+        int num = 32;
+        Console.WriteLine("Un numero entero es por ejemplo: " + num);
+        Console.WriteLine("En este caso el numero " + num + " es un numero entero porque no tiene decimales.");
+        Console.WriteLine("Los numeros enteros se utilizan para contar objetos, como la cantidad de personas en una sala o el número de libros en una estantería.");
+        Console.WriteLine("Presiona ENTER para cerrar.");
 
-            // Declaración de un entero
-            int edad = 28;
-
-            Console.WriteLine("1. TIPO ENTERO (int):");
-            Console.WriteLine("   Para números sin decimales, como edad o cantidad.");
-            Console.WriteLine("   Valor guardado: " + edad);
-
-            Console.WriteLine("\nPresiona ENTER para cerrar.");
-            Console.ReadLine();
+        Console.ReadLine();
 
     }
 }
