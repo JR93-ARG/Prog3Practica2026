@@ -21,40 +21,51 @@ class Program
 
     static void programa1()
     {
-         Console.WriteLine("PRACTICAMOS NUMEROS ENTEROS");
-    
-        int num = 32;
-        Console.WriteLine("Un numero entero es por ejemplo: " + num);
-        Console.WriteLine("En este caso el numero " + num + " es un numero entero porque no tiene decimales.");
-        Console.WriteLine("Los numeros enteros se utilizan para contar objetos, como la cantidad de personas en una sala o el número de libros en una estantería.");
-        Console.WriteLine("Presiona ENTER para cerrar.");
-
-        Console.ReadLine();
+       int edad = 28;
+        Console.WriteLine("== BLOQUE 1: EDAD ==");
+        Console.WriteLine("* TIPO ENTERO (int):");
+        Console.WriteLine("   Para guardar la edad de una persona.");
+        Console.WriteLine("   Valor guardado: " + edad);
+        Console.WriteLine();
 
     }
 
     static void programa2()
     {
-         Console.WriteLine("=== SUMA NUMEROS ENTEROS ===");
-       
-        Console.Write("Ingrese el primer número: ");
-        int numero1 = int.Parse(Console.ReadLine());
-       
-        Console.Write("Ingrese el segundo número: ");
-        int numero2 = int.Parse(Console.ReadLine());
-       
-        
-       
-        Console.WriteLine($"La suma de {numero1} y {numero2} es: {numero1 + numero2}");
+        int cantidad = 150;
+        Console.WriteLine("== BLOQUE 2: CANTIDAD ==");
+        Console.WriteLine("* TIPO ENTERO (int):");
+        Console.WriteLine("   Para guardar una cantidad de productos en stock.");
+        Console.WriteLine("   Valor guardado: " + cantidad);
+        Console.WriteLine();
     }
-
     static void programa3()
     {
-         static void Main(string[]args)
+       int temperatura = 37;
+        Console.WriteLine("== BLOQUE 3: TEMPERATURA ==");
+        Console.WriteLine("* TIPO ENTERO (int):");
+        Console.WriteLine("   Para guardar la temperatura corporal en grados enteros.");
+        Console.WriteLine("   Valor guardado: " + temperatura);
+        Console.WriteLine();
+    }
+
+    static void programa4()
+    {
+        int puntaje = 980;
+        Console.WriteLine("== BLOQUE 4: PUNTAJE ==");
+        Console.WriteLine("* TIPO ENTERO (int):");
+        Console.WriteLine("   Para guardar el puntaje de un jugador en un videojuego.");
+        Console.WriteLine("   Valor guardado: " + puntaje);
+        Console.WriteLine();
+
+        static void programa5()
         {
-            Console.WriteLine("CONOCIENDO LOS NUMEROS ENTEROS");
-            Console.WriteLine("El numero entero es: " + int.MaxValue);
-            Console.WriteLine("El numero entero es: " + int.MinValue);    
+            int anio = 2024;
+        Console.WriteLine("== BLOQUE 5: AÑO ==");
+        Console.WriteLine("* TIPO ENTERO (int):");
+        Console.WriteLine("   Para guardar un año, como el año de nacimiento.");
+        Console.WriteLine("   Valor guardado: " + anio);
+        Console.WriteLine();
         }
     }
     

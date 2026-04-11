@@ -20,7 +20,6 @@ class Program
             //Console.ReadLine();
 
             programa1();
-           
             programa2();
             programa3();
             programa4();
@@ -30,97 +29,51 @@ class Program
 
     static void programa1()
     {
-        Console.WriteLine("== INGRESAR Y MOSTRAR NÚMEROS ==");
-        int[] numeros = new int[5];
-
-        for (int i = 0; i < 5; i++)
-        {
-            Console.WriteLine("Ingrese un número:");
-            numeros[i] = int.Parse(Console.ReadLine());
-        }
-        
-        Console.WriteLine("El orden de ingreso fue:");
-        
-        for (int i = 0; i < 5; i++)
-        {
-            Console.WriteLine("* " + numeros[i]);
-        }
-
+         string nombre = "Ana López";
+        Console.WriteLine("== BLOQUE 1: NOMBRE COMPLETO ==");
+        Console.WriteLine("* TIPO TEXTO (string):");
+        Console.WriteLine("   Para guardar el nombre completo de una persona. Usa comillas dobles.");
+        Console.WriteLine("   Valor guardado: " + nombre);
         Console.WriteLine("Presiona ENTER para salir.");
         Console.ReadLine();
-     }
+    }
+
+       
+     
 
     static void programa2()
     {
-        Console.WriteLine("== SUMAR NUMEROS DEL 1 AL 5 ==");
-        double[] numeros = new double[5];
-        double suma = 0;
-
-        for (int i = 0; i < 5; i++)
-        {
-            Console.WriteLine("Ingrese un número:");
-            numeros[i] = double.Parse(Console.ReadLine());
-        }
-
-        for (int i = 0; i < 5; i++)
-        {
-            suma = suma + numeros[i];
-        }
-
-        Console.WriteLine("La suma es: " + suma);
-
+         char inicialNombre = 'A';
+        Console.WriteLine("== BLOQUE 2: INICIAL DEL NOMBRE ==");
+        Console.WriteLine("* TIPO CARÁCTER (char):");
+        Console.WriteLine("   Para guardar una sola letra. Usa comillas simples.");
+        Console.WriteLine("   Valor guardado: '" + inicialNombre + "'");
+        
         Console.WriteLine("Presiona ENTER para salir.");
         Console.ReadLine();
     }
 
     static void programa3()
     {
-        Console.WriteLine("== ENCONTRAREMOS EL NÚMERO MAYOR ==");   
-        int[] numeros = new int[5];
-
-        for (int i = 0; i < 5; i++)
-        {
-            Console.WriteLine("Ingrese un número:");
-            numeros[i] = int.Parse(Console.ReadLine());
-        }
-
-        int mayor = numeros[0];
-
-        for (int i = 1; i < 5; i++)
-        {
-            if (numeros[i] > mayor)
-            {
-                mayor = numeros[i];
-            }
-        }
-
-        Console.WriteLine("El número mayor es: " + mayor);
-
+        
+        string direccion = "Av. Corrientes 1234, Buenos Aires";
+        Console.WriteLine("== BLOQUE 3: DIRECCIÓN ==");
+        Console.WriteLine("* TIPO TEXTO (string):");
+        Console.WriteLine("   Para guardar una dirección completa. Usa comillas dobles.");
+        Console.WriteLine("   Valor guardado: " + direccion);
+        
         Console.WriteLine("Presiona ENTER para salir.");
         Console.ReadLine();
     }
 
     static void programa4()
     {
-        Console.WriteLine("== CONTAR NÚMEROS PARES ==");
-
-        int[] numeros = new int[5];
-        int contador = 0;
-
-        for (int i = 0; i < 5; i++)
-        {
-            Console.WriteLine("Ingrese un número:");
-            numeros[i] = int.Parse(Console.ReadLine());
-        }
-
-        for (int i = 0; i < 5; i++)
-        {
-            if (numeros[i] % 2 == 0)
-            {
-                contador++;
-            }
-        }
-
+       char letraCalificacion = 'B';
+        Console.WriteLine("== BLOQUE 4: LETRA DE CALIFICACIÓN ==");
+        Console.WriteLine("* TIPO CARÁCTER (char):");
+        Console.WriteLine("   Para guardar la calificación de un alumno con una sola letra.");
+        Console.WriteLine("   Valor guardado: '" + letraCalificacion + "'");
+        Console.WriteLine();
         Console.WriteLine("Cantidad de números pares: " + contador);
 
         Console.WriteLine("Presiona ENTER para salir.");
@@ -129,24 +82,12 @@ class Program
 
     static void programa5()
     {
-        Console.WriteLine("== MOSTRAR NÚMEROS EN ORDEN INVERSO ==");
-       
-        int[] numeros = new int[5];
-
-        for (int i = 0; i < 5; i++)
-        {
-            Console.WriteLine("Ingrese un número:");
-            numeros[i] = int.Parse(Console.ReadLine());
-        }
-
-        Console.WriteLine("El orden inverso de ingreso fue:");
-
-        for (int i = 4; i >= 0; i--)
-        {
-            
-            Console.WriteLine("* " + numeros[i]);
-        }
-
+        string correo = "ana.lopez@gmail.com";
+        Console.WriteLine("== BLOQUE 5: CORREO ELECTRÓNICO ==");
+        Console.WriteLine("* TIPO TEXTO (string):");
+        Console.WriteLine("   Para guardar una dirección de correo electrónico. Usa comillas dobles.");
+        Console.WriteLine("   Valor guardado: " + correo);
+        
         Console.WriteLine("Presiona ENTER para salir.");
         Console.ReadLine();
 }

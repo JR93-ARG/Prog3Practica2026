@@ -31,89 +31,50 @@ class Program
 
     static void program1()
     {
-        Console.WriteLine("==CONTADOR DE NUMEROS DEL 1 AL QUE ELIJAS==");
-        Console.WriteLine("Ingrese un número:");
-        int num = int.Parse(Console.ReadLine());
-
-        for (int i = 1; i <= num; i++)
-            {
-                Console.WriteLine(i);
-            }
-        Console.WriteLine("\nPresiona ENTER para cerrar.");
-        Console.ReadLine();            
+       double estatura = 1.75;
+        Console.WriteLine("== BLOQUE 1: ESTATURA ==");
+        Console.WriteLine("* TIPO DECIMAL COMÚN (double):");
+        Console.WriteLine("   Para guardar la estatura de una persona en metros.");
+        Console.WriteLine("   Valor guardado: " + estatura + " metros");
+        Console.WriteLine();          
     }
 
     static void program2()
     {
-        Console.WriteLine("==MOSTRAR NUMEROS PARES HASTA EL NUMERO QUE ELIJAS==");
-       Console.WriteLine("Ingrese un número:");
-        int num = int.Parse(Console.ReadLine());
-
-        for (int i = 1; i <= num; i++)
-        {
-            if (i % 2 == 0)
-            {
-                Console.WriteLine(i);
-            }
-        } 
-        Console.WriteLine("\nPresiona ENTER para cerrar.");
-        Console.ReadLine();    
+      double peso = 72.5;
+        Console.WriteLine("== BLOQUE 2: PESO ==");
+        Console.WriteLine("* TIPO DECIMAL COMÚN (double):");
+        Console.WriteLine("   Para guardar el peso corporal en kilogramos.");
+        Console.WriteLine("   Valor guardado: " + peso + " kg");
+        Console.WriteLine();   
     }
     static void program3()
     {
-        Console.WriteLine("== SUMA DE NÚMEROS HASTA QUE INGRESES 0 ==");
-        double num;
-        double suma = 0;
-
-        do
-        {
-            Console.WriteLine("Ingrese un número (0 para terminar):");
-            num = double.Parse(Console.ReadLine());
-
-            suma = suma + num;
-
-        } while (num != 0);
-
-        Console.WriteLine("La suma total es: " + suma);
-        Console.WriteLine("\nPresiona ENTER para cerrar.");
-        Console.ReadLine();
+      decimal precioProducto = 199.99m;
+        Console.WriteLine("== BLOQUE 3: PRECIO DE PRODUCTO ==");
+        Console.WriteLine("* TIPO DECIMAL FINANCIERO (decimal):");
+        Console.WriteLine("   ¡Obligatorio para dinero! Usa la 'm'.");
+        Console.WriteLine("   Valor guardado: $" + precioProducto);
+        Console.WriteLine();
     }
     static void program4()
     {
-        Console.WriteLine("== TABLA DE MULTIPLICAR ==");
-        Console.WriteLine("Ingrese un número y calculamos la tabla:");
-        int num = int.Parse(Console.ReadLine());
-
-        for (int i = 1; i <= 10; i++)
-        {
-            Console.WriteLine(num + " x " + i + " = " + (num * i));
-        }
-        Console.WriteLine("\nPresiona ENTER para cerrar.");
-        Console.ReadLine();
+      decimal sueldo = 85000.50m;
+        Console.WriteLine("== BLOQUE 4: SUELDO ==");
+        Console.WriteLine("* TIPO DECIMAL FINANCIERO (decimal):");
+        Console.WriteLine("   Para guardar el sueldo mensual de un empleado. Usa la 'm'.");
+        Console.WriteLine("   Valor guardado: $" + sueldo);
+        Console.WriteLine();
     }
 
     static void program5()
     {
-        Console.WriteLine("== CONTADOR DE NÚMEROS PARES E IMPARES ==");
-        int num;
-        int contador = 0;
-
-       do
-        {
-            Console.WriteLine("Ingrese un número (0 para terminar):");
-            num = int.Parse(Console.ReadLine());
-
-            if (num % 2 != 0)
-            {
-                contador++;
-            }
-
-        } while (num != 0);
-
-        Console.WriteLine("Cantidad de números impares: " + contador);
-
-        Console.WriteLine("\nPresiona ENTER para cerrar.");
-        Console.ReadLine();
+        double velocidad = 98.6;
+        Console.WriteLine("== BLOQUE 5: VELOCIDAD ==");
+        Console.WriteLine("* TIPO DECIMAL COMÚN (double):");
+        Console.WriteLine("   Para guardar la velocidad de un vehículo en km/h.");
+        Console.WriteLine("   Valor guardado: " + velocidad + " km/h");
+        Console.WriteLine();
 
     }
 }
