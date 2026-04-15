@@ -1,0 +1,14 @@
+c:\Users\rivero.135\Desktop\c#\Programas\EjerciciosArrays1-main\Programa09\bin\Debug\net10.0\Programa09.exe
+C:\Users\rivero.135\Desktop\c#\Programas\EjerciciosArrays1-main\Programa09\bin\Debug\net10.0\Programa09.deps.json
+C:\Users\rivero.135\Desktop\c#\Programas\EjerciciosArrays1-main\Programa09\bin\Debug\net10.0\Programa09.runtimeconfig.json
+c:\Users\rivero.135\Desktop\c#\Programas\EjerciciosArrays1-main\Programa09\bin\Debug\net10.0\Programa09.dll
+c:\Users\rivero.135\Desktop\c#\Programas\EjerciciosArrays1-main\Programa09\bin\Debug\net10.0\Programa09.pdb
+c:\Users\rivero.135\Desktop\c#\Programas\EjerciciosArrays1-main\Programa09\obj\Debug\net10.0\Programa09.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\rivero.135\Desktop\c#\Programas\EjerciciosArrays1-main\Programa09\obj\Debug\net10.0\Programa09.AssemblyInfoInputs.cache
+c:\Users\rivero.135\Desktop\c#\Programas\EjerciciosArrays1-main\Programa09\obj\Debug\net10.0\Programa09.AssemblyInfo.cs
+c:\Users\rivero.135\Desktop\c#\Programas\EjerciciosArrays1-main\Programa09\obj\Debug\net10.0\Programa09.csproj.CoreCompileInputs.cache
+c:\Users\rivero.135\Desktop\c#\Programas\EjerciciosArrays1-main\Programa09\obj\Debug\net10.0\Programa09.dll
+c:\Users\rivero.135\Desktop\c#\Programas\EjerciciosArrays1-main\Programa09\obj\Debug\net10.0\refint\Programa09.dll
+c:\Users\rivero.135\Desktop\c#\Programas\EjerciciosArrays1-main\Programa09\obj\Debug\net10.0\Programa09.pdb
+C:\Users\rivero.135\Desktop\c#\Programas\EjerciciosArrays1-main\Programa09\obj\Debug\net10.0\Programa09.genruntimeconfig.cache
+C:\Users\rivero.135\Desktop\c#\Programas\EjerciciosArrays1-main\Programa09\obj\Debug\net10.0\ref\Programa09.dll
